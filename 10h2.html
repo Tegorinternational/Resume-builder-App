@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#FF5722" />
+  <meta name="msapplication-TileColor" content="white" />
+  <meta name="msapplication-TileImage" content="/Resume-builder-App/assets/header-logo.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Resume builder App" />
+  <meta name="application-name" content="Resume builder App" />
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+  <link rel="stylesheet" href="/Resume-builder-App/assets/10s2.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/Resume-builder-App/assets/logo.png">
+  <link rel="stylesheet" href="https://tegorinternational.github.io/GitHub.io/css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Resume builder app - Tegor International</title>
+  <style>
+  
+    .print-btn{
+      width: 60px;
+      height: 60px;
+      background-color: #FFFFFF;
+      box-shadow: 0px 0px 5px #000000;
+      border-radius: 100%;
+      position: relative;
+      z-index: 9999;
+      right: 15px;
+      bottom: 15px;
+      position: fixed;
+      outline: none;
+      border: none;
+    }
+    
+    .water-mark{
+      z-index: 8999;
+      right: 0px;
+      bottom: 0px;
+      position: fixed;
+    }
+    
+    @media print {
+       .print-btn {
+         display: none;
+       }
+       .app-header{
+         display: none;
+       }
+     }
+  </style>
+</head>
+
+<body>
+  
+  <div class="w-full mx-auto pb-14 app-header">
+    
+    <div class="bg-indigo-50 p-6 rounded-b-lg app-info">
+<!-- app data will appear here. -->
+          </div>
+    
+  </div>
+
+<header class="flex flex-wrap pt-5 px-5">
+  
+  <div class="mr-auto text-left">
+    <h1 class="text-4xl font-medium text-blue-900" id="myName"></h1>
+    <p class="text-lg mb-4 text-blue-900" id="myJobTitle"></p>
+    <ul class="list-none text-sm text-gray-800">
+      <li><i class="fa fa-envelope text-base mr-2 text-yellow-600"></i><span id="myEmail"></span></li>
+      <li><i class="fa fa-phone text-base mr-2 text-green-700"></i><span id="myPhone"></span></li>
+      <li><i class="fa fa-map-marker text-base mr-2 text-blue-600"></i><span id="myAddress"></span></li>
+    </ul>
+    
+  </div>
+  <div class="ml-auto">
+    <img class="w-32 ml-auto rounded-full text-right" src="/Resume-builder-App/assets/profile.png" alt="profile">
+  </div>
+  
+</header>
+
+<hr class="w-full border-gray-300 mt-5">
+
+<section class="flex flex-wrap pt-5 px-5">
+  
+  <div class="w-full mb-5">
+    <h1 class="uppercase text-xl font-medium text-blue-900">Summary</h1>
+    <hr class="w-full border-blue-900 mb-2">
+    <p class="text-sm" id="mySummary">
+</p>
+  </div>
+  
+  
+  <div class="w-full mb-5">
+    <h1 class="uppercase text-xl font-medium text-blue-900">experience</h1>
+    <hr class="w-full border-blue-900 mb-2">
+    <p class="text-sm" id="myExperience">
+</p>
+  </div>
+  
+  
+  
+ <div class="w-full mb-5 w-full">
+ <h1 class="uppercase text-xl font-medium text-blue-900">Education</h1>
+ <hr class="w-full border-blue-900 mb-2">
+ 
+ <table class="text-left w-full">
+   
+   <tr class="border-2 border-gray-500">
+     <th class="border-2 border-gray-500 p-1">Class</th>
+     <th class="border-2 border-gray-500 p-1">School or college name</th>
+     <th class="border-2 border-gray-500 p-1">Year</th>
+     <th class="border-2 border-gray-500 p-1">Percentage</th>
+   </tr>
+   
+   <tr class="border-2 border-gray-500">
+     <td class="border-2 border-gray-500 p-1" id="myC1"></td>
+     <td class="border-2 border-gray-500 p-1" id="myO1"></td>
+     <td class="border-2 border-gray-500 p-1" id="myY1"></td>
+     <td class="border-2 border-gray-500 p-1" id="myP1"></td>
+   </tr>
+   <tr>
+     <td class="border-2 border-gray-500 p-1" id="myC2"></td>
+     <td class="border-2 border-gray-500 p-1" id="myO2"></td>
+     <td class="border-2 border-gray-500 p-1" id="myY2"></td>
+     <td class="border-2 border-gray-500 p-1" id="myP2"></td>
+   </tr>
+   <tr>
+     <td class="border-2 border-gray-500 p-1" id="myC3"></td>
+     <td class="border-2 border-gray-500 p-1" id="myO3"></td>
+     <td class="border-2 border-gray-500 p-1" id="myY3"></td>
+     <td class="border-2 border-gray-500 p-1" id="myP3"></td>
+   </tr>
+   <tr>
+     <td class="border-2 border-gray-500 p-1" id="myC4"></td>
+     <td class="border-2 border-gray-500 p-1" id="myO4"></td>
+     <td class="border-2 border-gray-500 p-1" id="myY4"></td>
+     <td class="border-2 border-gray-500 p-1" id="myP4"></td>
+   </tr>
+   
+ </table>
+ 
+ </div>
+ 
+ 
+ <div class="w-full mb-5">
+   <h1 class="uppercase text-xl font-medium text-blue-900">Skills</h1>
+   <hr class="w-full border-blue-900 mb-2">
+   <p class="text-sm font-bold" id="mySkills">
+   </p>
+ </div>
+ 
+ 
+ 
+ <div class="w-full mb-5">
+   <h1 class="uppercase text-xl font-medium text-blue-900">Hobbies</h1>
+   <hr class="w-full border-blue-900 mb-2">
+   <p class="text-sm font-bold" id="myHobbies">
+   </p>
+ </div>
+ 
+ 
+ 
+ <div class="w-full mb-5">
+   <h1 class="uppercase text-xl font-medium text-blue-900">personal profile</h1>
+   <hr class="w-full border-blue-900 mb-2">
+   
+   <table class="text-left w-full border-2 border-gray-400">
+   <tr>
+     <td class="p-1 font-medium">Name:</td>
+     <td class="p-1" id="myPIName"></td>
+   </tr>
+   <tr>
+     <td class="p-1 font-medium">Father Name:</td>
+     <td class="p-1" id="myFatherName"></td>
+   </tr>
+   <tr>
+     <td class="p-1 font-medium">Date of birth:</td>
+     <td class="p-1" id="myDOB"></td>
+   </tr>
+   <tr>
+     <td class="p-1 font-medium">Gender:</td>
+     <td class="p-1" id="myGender"></td>
+   </tr>
+   <tr>
+     <td class="p-1 font-medium">marital status:</td>
+     <td class="p-1" id="myMaritalStatus"></td>
+   </tr>
+   <tr>
+     <td class="p-1 font-medium">Nationality:</td>
+     <td class="p-1" id="myNationality"></td>
+   </tr>
+   
+ </table>
+   
+ </div>
+ 
+ 
+ <div class="w-full mb-5">
+    <h1 class="uppercase text-xl font-medium text-blue-900">Objective</h1>
+    <hr class="w-full border-blue-900 mb-2">
+    <p class="text-sm" id="myObjective"></p>
+  </div>
+  
+  
+  <hr class="w-full border-gray-300 my-5">
+  
+  
+  <div class="w-full mb-5 mx-auto flex px-5">
+    <div class="text-left mr-auto">
+      <h2>
+        <span>Place:</span>
+      <span id="myFooterPlace"></span>
+      </h2>
+      <br>
+      <h2><span>Date:</span>
+      <span id="myFooterDate"></span></h2>
+      </div>
+    <div class="text-left ml-auto">
+      <h2><span>Signature</span></h2>
+      <br>
+      <h2><span>Name</span></h2>
+    </div>
+  </div>
+  
+</section>
+
+<button class="print-btn m-icon text-4xl text-indigo-600" onclick="window.print();"><i class="fa fa-download"></i></button>
+
+<!-- watermark -->
+
+<a class="text-blue-600 font-light water-mark text-sm" href="https://tegorinternational.github.io/GitHub.io/"><span class="text-gray-500 ">Resume built on: </span>tegorinternational.github.io/GitHub.io/</a>
+
+
+<hr class="w-full border-gray-300 mt-5 app-header">
+<footer class="mx-auto px-5 text-gray-900 mt-10 app-header">
+      <section class="text-left pb-5">
+        <h3 class="mb-2 font-medium">Sponsors</h3>
+        <p class="text-sm text-gray-400">This tool is devloped to remove extra spaces from the code.</p>
+      </section>
+      
+      
+      <section class="mx-auto text-sm">
+        <div class="pb-5 text-right">
+          <h3 class="text-right">Credits - </h3>
+          <p>Project maintained by: <a target="_blank" class="text-c" href="https://tegorinternational.github.io/GitHub.io/" title="Tegor International">Tegor International</a>
+          <br>Hosted on: <span class="text-indigo-500">GitHub Pages</span>
+        </p>
+        <p>Project devloped by: <a class="text-green-400" target="_blank" href="https://tegorinternational.github.io/GitHub.io/pages/profile.html"
+            title="Rurendra Tegor">Rurendra Tegor</a></p>
+        </div>
+      </section>
+ </footer>
+<script src="/Resume-builder-App/assets/10h2.js"></script>
+<script type="module" src="/Resume-builder-App/assets/10app2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+/*******************************************************
+ * Copyright (C) 2022-2025 Tegor International, Inc - All Rights Reserved.
+ * This file is part of Resume builder App (RBA).
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Resume builder App (RBA) can not be copied and/or distributed without the express
+ * Proprietary and confidential
+ * Written by Rurendra Tegor <uniquespace00@gmail.com>, July 2022
+ *******************************************************/
