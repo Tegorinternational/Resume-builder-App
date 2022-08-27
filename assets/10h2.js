@@ -8,7 +8,23 @@ document.getElementById("myPhone").innerHTML=localStorage.getItem("userPhone");
 document.getElementById("myAddress").innerHTML=localStorage.getItem("userAddress");
 
 document.getElementById("mySummary").innerHTML=localStorage.getItem("userSummary");
-document.getElementById("myExperience").innerHTML=localStorage.getItem("userExperience");
+
+
+
+
+document.getElementById("myExpStart1").innerHTML=localStorage.getItem("userES1");
+document.getElementById("myExpEnd1").innerHTML=localStorage.getItem("userEE1");
+document.getElementById("myExpJob1").innerHTML=localStorage.getItem("userEJ1");
+document.getElementById("myExpOrg1").innerHTML=localStorage.getItem("userEO1");
+
+
+document.getElementById("myExpStart2").innerHTML=localStorage.getItem("userES2");
+document.getElementById("myExpEnd2").innerHTML=localStorage.getItem("userEE2");
+document.getElementById("myExpJob2").innerHTML=localStorage.getItem("userEJ2");
+document.getElementById("myExpOrg2").innerHTML=localStorage.getItem("userEO2");
+
+
+
 
 document.getElementById("myC1").innerHTML=localStorage.getItem("userC1");
 document.getElementById("myO1").innerHTML=localStorage.getItem("userO1");
