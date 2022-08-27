@@ -40,9 +40,10 @@
     
     .water-mark{
       z-index: 8999;
-      right: 0px;
-      bottom: 0px;
+      bottom: 50%;
       position: fixed;
+      transform: translateX(-48%) rotate(270deg);
+      opacity: 0;
     }
     
     @media print {
@@ -51,6 +52,9 @@
        }
        .app-header{
          display: none;
+       }
+       .water-mark{
+         opacity: 1;
        }
      }
   </style>
