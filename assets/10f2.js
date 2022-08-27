@@ -9,7 +9,21 @@ function getData()
   var Address = document.getElementById("address").value;
   
   var Summary = document.getElementById("summary").value;
-  var Experience = document.getElementById("experience").value;
+  
+
+  var ES1 = document.getElementById("expStart1").value;
+  var EE1 = document.getElementById("expEnd1").value;
+  var EJ1 = document.getElementById("expJobRole1").value;
+  var EO1 = document.getElementById("expOrg1").value;
+  
+  var ES2 = document.getElementById("expStart2").value;
+  var EE2 = document.getElementById("expEnd2").value;
+  var EJ2 = document.getElementById("expJobRole2").value;
+  var EO2 = document.getElementById("expOrg2").value;
+  
+
+
+
   var C1 = document.getElementById("class1").value;
   var O1 = document.getElementById("college-name1").value;
   var Y1 = document.getElementById("year-of-passing1").value;
@@ -52,7 +66,22 @@ function getData()
   localStorage.setItem("userAddress", Address);
   
   localStorage.setItem("userSummary", Summary);
-  localStorage.setItem("userExperience", Experience);
+  
+
+
+
+  localStorage.setItem("userES1", ES1);
+  localStorage.setItem("userEE1", EE1);
+  localStorage.setItem("userEJ1", EJ1);
+  localStorage.setItem("userEO1", EO1);
+  
+  localStorage.setItem("userES2", ES2);
+  localStorage.setItem("userEE2", EE2);
+  localStorage.setItem("userEJ2", EJ2);
+  localStorage.setItem("userEO2", EO2);
+
+
+
   
   localStorage.setItem("userC1", C1);
   localStorage.setItem("userO1", O1);
