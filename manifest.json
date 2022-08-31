@@ -5,7 +5,7 @@
   "display": "standalone", 
   "background_color": "#000036", 
   "theme_color": "#FF5722",
-  "version": "1.0.0", 
+  "version": "1.2.0", 
   "author": "Rurendra Tegor", 
   "description": "Resume Builder is an App that provides you resume after filling the form.",
   "purpose": "maskable",
