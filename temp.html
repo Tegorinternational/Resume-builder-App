@@ -22,23 +22,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Resume builder app - Tegor International</title>
   <style>
-  
-    .print-btn{
-      width: 60px;
-      height: 60px;
-      background-color: #FFFFFF;
-      box-shadow: 0px 0px 5px #000000;
-      border-radius: 100%;
-      position: relative;
-      z-index: 9999;
-      right: 15px;
-      bottom: 15px;
-      position: fixed;
-      outline: none;
-      border: none;
-    }
-    
-    .water-mark{
+
+
+.water-mark{
       z-index: 8999;
       bottom: 50%;
       position: fixed;
@@ -47,16 +33,99 @@
     }
     
     @media print {
-       .print-btn {
+       .tool-btn {
          display: none;
        }
        .app-header{
+         display: none;
+       }
+       .tool-box{
          display: none;
        }
        .water-mark{
          opacity: 1;
        }
      }
+     
+     .tool-btn{
+       background-color: none;
+       position: relative;
+       z-index: 9999;
+       right: 15px;
+       bottom: 15px;
+       position: fixed;
+     }
+     .b1{
+       width: 60px;
+       height: 60px;
+       background-color: #323FCE;
+       box-shadow: 0px 0px 5px #000000;
+       outline: none;
+       border: none;
+       border-radius: 100%;
+       margin-bottom: 10px;
+       cursor: none;
+     }
+     .b2{
+       width: 60px;
+       height: 60px;
+       background-color: #20C28D;
+       box-shadow: 0px 0px 5px #000000;
+       outline: none;
+       border: none;
+       border-radius: 100%;
+       cursor: none;
+     }
+     
+     
+     
+     
+     /* tool box*/
+     .tool-box {
+       height: 0px; 
+       width: 60px; 
+       position: fixed; 
+       z-index: 40; 
+       bottom: 115px;
+       right: 15px; 
+       overflow-x: hidden; 
+       transition: 0.5s; 
+       background-color: #000000; 
+       border-top-left-radius: 100px; 
+       border-top-right-radius: 100px;
+       padding-top: 15px;
+     }
+     
+     .anim { 
+       transition: width 2s, height 2s, transform 0.3s;
+       font-size: 30px;
+     } 
+     .anim:active { 
+       transform: rotate(360deg);
+     }
+     .fs{
+       font-size: 0.6rem;
+     }
+     
+     
+     /* share dialogue*/
+     
+     .share-dialog { 
+  display: none; 
+  box-shadow: 0px 0px 10px #000000;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  
+} 
+  
+.share-dialog.is-open { 
+  display: block; 
+  z-index: 99999;
+  position: fixed;
+  } 
+
+
   </style>
 </head>
 
