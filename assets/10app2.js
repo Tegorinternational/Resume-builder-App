@@ -3,7 +3,7 @@ const data = [
     id: 1,
     getappname: "Resume builder App",
     getappdesc: "Tegor International",
-    getappversion: "1.0.0",
+    getappversion: "1.2.0",
     getapplogo: "/Resume-builder-App/assets/header-logo.png"
   }
   ];
