@@ -297,6 +297,82 @@
         </div>
       </section>
  </footer>
+
+
+
+
+
+<div class="tool-btn text-white">
+  <button onclick="openNav() , myFunction(this)" class="b1 text-3xl fa fa-gear anim"></button>
+  <br>
+  <button class="b2 text-3xl" onclick="window.print();"><i class="fa fa-download"></i></button>
+</div>
+
+<div id="mySidenav" class="tool-box p-1">
+  
+  <div class="w-full h-full text-center text-sm pt-3">
+    <label class="text-white w-full fs">
+      <a target="_blank" href="https://tegorinternational.github.io/Resume-builder-App/feedback.html" class="text-xl"><span class="fas fa-comment-alt"></span> </a><p class="">Feedback</p></label>
+    
+    <label class="text-white w-full fs">
+      <a href="#" class="text-xl share-button"><span class="fa fa-share mt-4"></span> </a><p class="">Share-app</p></label>
+      
+    <label class="text-white w-full fs"> 
+      <a href="#" onclick="history.back()" class="text-xl"><span class="fa fa-edit mt-4"></span> </a><p class="">Edit-Pdf</p></label>
+      
+    
+  </div>
+  
+</div>
+
+
+
+<script>
+function myFunction(x) 
+{ 
+  x.classList.toggle("fa-times"); 
+} 
+function openNav() 
+{ 
+  var e = document.getElementById("mySidenav"); 
+if (e.style.height == '250px') { 
+  e.style.height = '0px'; } 
+else { 
+  e.style.height = '250px'; } 
+  
+}
+function closeNav() 
+{ 
+  document.getElementById("mySidenav").style.height = "0"; } 
+</script>
+
+
+<script> 
+const shareButton = document.querySelector('.share-button'); 
+const shareDialog = document.querySelector('.share-dialog'); 
+const closeButton = document.querySelector('.close-button'); shareButton.addEventListener('click', event => { 
+if (navigator.share) { navigator.share({ title: 'Tegor International', url: 'https://tegorinternational.github.io/Resume-builder-App/' }).then(() => { console.log('Thanks for sharing!'); }) .catch(console.error); } 
+else { shareDialog.classList.add('is-open'); } }); closeButton.addEventListener('click', event => { shareDialog.classList.remove('is-open'); }); 
+</script>
+
+<script>
+  function copyToClipboard() {
+    const str = document.getElementById('item-to-copy').innerText
+    const el = document.createElement('textarea')
+    el.value = str
+    el.setAttribute('readonly', '')
+    el.style.position = 'absolute'
+    el.style.left = '-9999px'
+    document.body.appendChild(el)
+    el.select()
+    document.execCommand('copy')
+    document.body.removeChild(el)
+  }
+</script>
+
+
+
+
 <script src="/Resume-builder-App/assets/10h2.js"></script>
 <script type="module" src="/Resume-builder-App/assets/10app2.js"></script>
 </body>
